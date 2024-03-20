@@ -1,0 +1,123 @@
+:root {
+  --cyan: hsl(179, 62%, 43%);
+  --off-cyan: hsl(179, 71%, 46%);
+  --bright-yellow: hsl(71, 73%, 54%);
+  --light-gray: hsl(204, 43%, 93%);
+  --grayish-blue: hsl(218, 22%, 67%);
+  --white: hsl(0, 0%, 100%);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  background-color: var(--light-gray);
+  font-family: "Karla", sans-serif;
+  min-height: 100vh;
+  line-height: 1.5;
+  font-size: 1.6rem;
+  padding: 3rem 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  font-weight: 700;
+}
+.card-container {
+  max-width: 40rem;
+  overflow: hidden;
+  border-radius: 0.5rem;
+}
+.card {
+  padding: 2rem;
+}
+.join-us {
+  background-color: var(--white);
+}
+.join-us h1 {
+  color: var(--cyan);
+  margin-bottom: 2rem;
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+.join-us h2 {
+  color: var(--bright-yellow);
+}
+.join-us p {
+  color: var(--grayish-blue);
+  margin-bottom: 2rem;
+  line-height: 1.7;
+}
+.subscription {
+  background-color: var(--cyan);
+}
+.subscription h2 {
+  color: var(--white);
+}
+.subscription p {
+  color: var(--white);
+}
+.price {
+  display: flex;
+  align-items: center;
+
+  font-size: 4rem;
+  font-weight: 700;
+  color: white;
+}
+.price span {
+  color: var(--light-gray);
+  font-size: 1.6rem;
+  margin-left: 1rem;
+  font-weight: 400;
+  opacity: 0.75;
+}
+.btn {
+  background-color: var(--bright-yellow);
+  color: var(--white);
+  font-family: inherit;
+  font-size: 1.6rem;
+  border: none;
+  outline: none;
+  width: 100%;
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+  margin-top: 3rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+.btn:hover {
+  cursor: pointer;
+}
+.why-us {
+  background-color: var(--off-cyan);
+  color: var(--light-gray);
+}
+.why-us h2 {
+  color: var(--white);
+}
+.why-us ul {
+  margin-bottom: 1.5rem;
+  opacity: 0.8;
+}
+ul li {
+  list-style-type: none;
+}
+@media screen and (min-width: 70rem) {
+  .card-container {
+    max-width: 64rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, auto);
+  }
+  .join-us {
+    grid-column: 1/3;
+  }
+}
